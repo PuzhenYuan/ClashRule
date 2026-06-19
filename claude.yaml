@@ -1,0 +1,86 @@
+# NAME: Claude (Custom)
+
+payload:
+  # ===== Claude current primary surfaces =====
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-KEYWORD,anthropic
+  - DOMAIN-SUFFIX,clau.de
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claudeusercontent.com         # Claude Artifacts 沙箱 iframe 域名（独立 origin，不在 claude.ai 后缀下）
+  - DOMAIN-SUFFIX,claudemcpclient.com
+
+  # ===== Anthropic API =====
+  - DOMAIN,api.anthropic.com
+  - DOMAIN,a-api.anthropic.com
+  - DOMAIN,a-cdn.anthropic.com
+
+  # ===== Console / docs / support / status =====
+  - DOMAIN,platform.claude.com
+  - DOMAIN,console.anthropic.com
+  - DOMAIN,api.console.anthropic.com
+  - DOMAIN,auth.console.anthropic.com
+  - DOMAIN,billing.anthropic.com
+  - DOMAIN,pivot.claude.ai
+  - DOMAIN,docs.anthropic.com
+  - DOMAIN,docs.claude.com
+  - DOMAIN,support.claude.com
+  - DOMAIN,status.claude.com
+  - DOMAIN,status.anthropic.com
+
+  # ===== Claude telemetry / diagnostics / feature flags =====
+  - DOMAIN,statsig.anthropic.com
+  - DOMAIN,analytics-api.anthropic.com
+  - DOMAIN,analytics-cdn.anthropic.com
+  - DOMAIN,metrics.anthropic.com
+  - DOMAIN,events.anthropic.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,ingest.us.sentry.io
+  - DOMAIN,o1158394.ingest.us.sentry.io
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com
+  - DOMAIN-SUFFIX,browser-intake-us3-datadoghq.com
+  - DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
+  - DOMAIN-SUFFIX,browser-intake-ap1-datadoghq.com
+  - DOMAIN-SUFFIX,browser-intake-ap2-datadoghq.com
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.eu
+  - DOMAIN-SUFFIX,browser-intake-ddog-gov.com
+  - DOMAIN-SUFFIX,browser-intake-us2-ddog-gov.com
+  - DOMAIN,cdn.usefathom.com
+  - DOMAIN,api.segment.io
+  - DOMAIN-SUFFIX,segment.io
+  - DOMAIN-SUFFIX,segment.com
+
+  # ===== Claude Code / desktop / artifact support =====
+  - DOMAIN,downloads.claude.ai
+  - DOMAIN-SUFFIX,storage.googleapis.com
+  - DOMAIN,bridge.claudeusercontent.com
+  - DOMAIN,www.claudeusercontent.com
+  - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,raw.githubusercontent.com
+
+  # ===== Claude MCP / Microsoft 365 connectors =====
+  - DOMAIN,mcp-proxy.anthropic.com
+  - DOMAIN,microsoft365.mcp.claude.com
+  - DOMAIN-SUFFIX,mcp.claude.com
+  - DOMAIN,appsforoffice.microsoft.com
+  - DOMAIN,login.microsoftonline.com
+
+  # ===== Claude provider-routed inference paths =====
+  - DOMAIN,accounts.google.com
+  - DOMAIN,oauth2.googleapis.com
+  - DOMAIN,sts.amazonaws.com
+  - DOMAIN-KEYWORD,bedrock-runtime
+  - DOMAIN-KEYWORD,bedrock-mantle
+  - DOMAIN-KEYWORD,bedrock.
+  - DOMAIN-KEYWORD,bedrock-agent.
+  - DOMAIN-KEYWORD,bedrock-agent-runtime.
+  - DOMAIN-SUFFIX,aiplatform.googleapis.com
+  - DOMAIN-KEYWORD,-aiplatform.googleapis.com
+  - DOMAIN,aiplatform.us.rep.googleapis.com
+  - DOMAIN,aiplatform.eu.rep.googleapis.com
+  - DOMAIN-SUFFIX,services.ai.azure.com
+  - DOMAIN-SUFFIX,openai.azure.com
+
+  - PROCESS-NAME,Claude
+  - PROCESS-NAME,Claude Helper
